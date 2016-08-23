@@ -7,8 +7,15 @@ html, body {
 }
 
 body {
-    background: url("../Static/pic/background_01.png") no-repeat;
+    background: black;
     color: white;
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+    background: url("../Static/pic/background_01.png") no-repeat;
+    background-size: cover ;
 }
 
 .pics {
@@ -23,8 +30,37 @@ header {
 }
 
 .logo-1 {
-    background: url("../Static/pic/index_03.png");
+    background: url("../Static/pic/index_03.png") no-repeat;
+    background-size: cover;
     width: 95%;
     height: 100%;
     float: right;
+}
+
+@media screen and (min-width: 1200px) {
+    #page {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #page {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #page {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #page {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
