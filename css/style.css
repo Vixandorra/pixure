@@ -163,6 +163,12 @@ header .logo-1 .background {
     font-size: 1em;
 }
 
+.text h1::after {
+    height: 5%;
+    content: url("../Static/pic/simbols_40.png");
+    float: right;
+}
+
 .text h2 {
     font-size: 0.8em;
 }
