@@ -34,8 +34,16 @@ li {
 #page header, #page main .logo-block {
     display: block;
     width: 100%;
-    height: 15%;
+
     overflow: hidden;
+}
+
+#page header {
+    height: 15%;
+}
+
+#page main .logo-block {
+    height: 40em;
 }
 
 .slide-arrow, .logo-1 {
@@ -226,10 +234,8 @@ header .logo-1 .background {
 main .slide-block-1 {
     display: block;
     position: relative;
-    height: ;
+    height: 400px;
 }
-
-
 
 main .logo-block .background {
     background: linear-gradient(-150deg, #000 0%, transparent 30%),
@@ -242,7 +248,7 @@ main .logo-block .background {
 main .logo-block .logo-2 {
     position: relative;
     display: block;
-    margin: 250px 32.631579% 20%; /* 496px / 1520 b 358 / 918 */
+    margin: 15em 32.631579% 10em; /* 496px / 1520 b 358 / 918 */
     width: 34.736842%; /* 528 / 1520 */
     height: 19.929825%;
     background: url("../Static/pic/pics-and-text_75.png") no-repeat, transparent;
@@ -250,11 +256,8 @@ main .logo-block .logo-2 {
 }
 
 main .logo-block .slide-arrow {
-    height: 15%;
+    height: 100%;
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
     #page {
