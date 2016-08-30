@@ -31,7 +31,7 @@ li {
     background-size: cover ;
 }
 
-header {
+#page header, #page main .logo-block {
     display: block;
     width: 100%;
     height: 15%;
@@ -46,6 +46,7 @@ header {
 
 .slide-arrow {
     width: 5%;
+    height: auto;
 }
 
 .slide-arrow .menu {
@@ -115,7 +116,8 @@ header {
     opacity: 1;
 }
 
-header .logo-1 .background {
+header .logo-1 .background,
+main .logo-block .background {
     position: absolute;
     display: block;
     content: "";
@@ -123,21 +125,25 @@ header .logo-1 .background {
     right: 0;
     width: 100%;
     height: 100%;
+
+}
+
+header .logo-1 .background {
     background: linear-gradient(-150deg, #000 0%, transparent 30%),
-                url("../Static/pic/index_03.png")  no-repeat;
+    url("../Static/pic/index_03.png")  no-repeat;
     background-size: cover;
     z-index: 0;
     opacity: 0.6;
 }
 
-#content {
+.content {
     position: relative;
     display: inline-block;
     width: 100%;
     height: 100%;
 }
 
-.logo-2 {
+.content .logo-2 {
     position: relative;
     display: block;
     margin: 250px 32.631579% 20%; /* 496px / 1520 b 358 / 918 */
@@ -216,6 +222,38 @@ header .logo-1 .background {
     text-align: right;
     float: right;
 }
+
+main .slide-block-1 {
+    display: block;
+    position: relative;
+    height: ;
+}
+
+
+
+main .logo-block .background {
+    background: linear-gradient(-150deg, #000 0%, transparent 30%),
+    url("../Static/pic/index_55.png")  no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+main .logo-block .logo-2 {
+    position: relative;
+    display: block;
+    margin: 250px 32.631579% 20%; /* 496px / 1520 b 358 / 918 */
+    width: 34.736842%; /* 528 / 1520 */
+    height: 19.929825%;
+    background: url("../Static/pic/pics-and-text_75.png") no-repeat, transparent;
+    background-size: contain;
+}
+
+main .logo-block .slide-arrow {
+    height: 15%;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
