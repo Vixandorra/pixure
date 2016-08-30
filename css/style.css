@@ -152,31 +152,70 @@ header .logo-1 .background {
 .text {
     display: block;
     float: left;
+    width: 40%;
     height: 12.447368%;
     text-align: left;
-    margin: 0 7%;
+    margin: 0 5%;
     letter-spacing: 1px;
 }
 
 .text h1 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .text h1::after {
     height: 5%;
-    content: url("../Static/pic/simbols_40.png");
+    content: url("../Static/pic/Shape-91.png");
     float: right;
+    vertical-align: middle;
 }
 
 .text h2 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .text h3 {
     font-size: 0.6em;
 }
 
+.right-block {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    height: 12.447368%;
+    text-align: right;
+    margin: 0 5%;
+    letter-spacing: 1px;
+}
+
+.right-block .arrow-right {
+    content: " ";
+    display: block;
+    height: 1.6em;
+    line-height: 1.6em;
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+
+.right-block .arrow-right a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../Static/pic/simbols_40.png") no-repeat 100%;
+    background-size: contain;
+    z-index: 999;
+}
+
+.right-block .date {
+    display: block;
+    height: 1.2em;
+    width: 100%;
+    font-size: 1em;
+    text-align: right;
+    float: right;
+}
 
 
 @media screen and (max-width: 1200px) {
