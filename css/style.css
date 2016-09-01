@@ -31,19 +31,23 @@ li {
     background-size: cover ;
 }
 
-#page header, #page main .logo-block {
+#page .logo-block-1, #page .logo-block-2 .logo-block {
     display: block;
     width: 100%;
-
     overflow: hidden;
 }
 
-#page header {
+#page .logo-block-1 {
     height: 15.5%;
 }
 
-#page main .logo-block {
-    height: 12.9%;
+
+#page .footer {
+    height: 13.5%;
+}
+
+#page .logo-block-2 .logo-block {
+    height: 25.938967%;
 }
 
 .slide-arrow, .logo-1 {
@@ -91,10 +95,8 @@ li {
 .slide-arrow .ticket .arrow a {
     display: inline-block;
     width: 20%;
-    height: auto;
     margin: 1.6em 3%;
-    background: url("../Static/pic/simbols_40.png") no-repeat;
-    background-size: contain;
+    content: url("../Static/pic/simbols_40.png");
     transform: rotate(270deg);
 }
 
@@ -126,8 +128,8 @@ li {
     opacity: 1;
 }
 
-header .logo-1 .background,
-main .logo-block .background {
+.logo-block-1 .logo-1 .background,
+.logo-block-2 .logo-block .background {
     position: absolute;
     display: block;
     content: "";
@@ -138,7 +140,7 @@ main .logo-block .background {
 
 }
 
-header .logo-1 .background {
+.logo-block-1 .logo-1 .background {
     background: linear-gradient(-150deg, #000 0%, transparent 30%),
     url("../Static/pic/index_03.png")  no-repeat;
     background-size: cover;
@@ -156,7 +158,7 @@ header .logo-1 .background {
 .content .logo-2 {
     position: relative;
     display: block;
-    margin: 10rem auto; /* 496px / 1520 b 358 / 918 */
+    margin: 15rem auto; /* 496px / 1520 b 358 / 918 */
     width: 34.736842%; /* 528 / 1520 */
     height: 15.929825%;
     background: url("../Static/pic/simbols_11.png") no-repeat, transparent;
@@ -233,13 +235,13 @@ header .logo-1 .background {
     float: right;
 }
 
-main .slide-block-1 {
+.logo-block-2 .slide-block-1 {
     display: block;
     position: relative;
     height: 400px;
 }
 
-main .logo-block .background {
+.logo-block-2 .logo-block .background {
     background: linear-gradient(-150deg, #000 0%, transparent 30%),
     url("../Static/pic/index_55.png")  no-repeat;
     background-size: cover;
@@ -247,17 +249,17 @@ main .logo-block .background {
     opacity: 0.6;
 }
 
-main .logo-block .logo-2 {
+.logo-block-2 .logo-block .logo-2 {
     position: relative;
     display: block;
-    margin: 15em 32.631579% 10em; /* 496px / 1520 b 358 / 918 */
+    margin: 20% auto; /* 496px / 1520 b 358 / 918 */
     width: 34.736842%; /* 528 / 1520 */
     height: 19.929825%;
     background: url("../Static/pic/pics-and-text_75.png") no-repeat, transparent;
     background-size: contain;
 }
 
-main .logo-block .slide-arrow {
+.logo-block-2 .logo-block .slide-arrow {
     height: 100%;
 }
 
