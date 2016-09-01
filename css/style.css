@@ -31,7 +31,8 @@ li {
     background-size: cover ;
 }
 
-#page .logo-block-1, #page .logo-block-2 .logo-block {
+#page .logo-block-1 .logo-block,
+#page .logo-block-2 .logo-block {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -39,6 +40,14 @@ li {
 
 #page .logo-block-1 {
     height: 15.5%;
+}
+
+#page .logo-block-2 {
+    height: 13.5%;
+}
+
+#page .slider-block-1 {
+    height: 8%;
 }
 
 
@@ -129,7 +138,7 @@ li {
 }
 
 .logo-block-1 .logo-1 .background,
-.logo-block-2 .logo-block .background {
+.logo-block-2 .logo-1 .background {
     position: absolute;
     display: block;
     content: "";
@@ -235,13 +244,7 @@ li {
     float: right;
 }
 
-.logo-block-2 .slide-block-1 {
-    display: block;
-    position: relative;
-    height: 400px;
-}
-
-.logo-block-2 .logo-block .background {
+.logo-block-2 .background {
     background: linear-gradient(-150deg, #000 0%, transparent 30%),
     url("../Static/pic/index_55.png")  no-repeat;
     background-size: cover;
