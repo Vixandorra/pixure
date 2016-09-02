@@ -20,6 +20,10 @@ a {
     text-transform: uppercase;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 li {
     list-style: none;
 }
@@ -44,10 +48,6 @@ li {
 
 #page .logo-block-2 {
     height: 13.5%;
-}
-
-#page .slider-block-1 {
-    height: 8%;
 }
 
 
@@ -265,6 +265,88 @@ li {
 .logo-block-2 .logo-block .slide-arrow {
     height: 100%;
 }
+
+.slider-block-1 {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 12.583333%;  /* 604px */
+    margin: 0 auto;
+}
+
+.slider-block-1 .header {
+    display: block;
+    position: relative;
+    height: 18.874172%;
+    margin: 0 auto;
+}
+
+.slider-block-1 .header h1 {
+    display: block;
+    position: relative;
+    width: 73.75%; /* 1180px */
+    height: 100%;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.slider-block-1 .effect-block {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 77.152318%; /*466px*/
+}
+
+.slider-block-1 .effect-block .sliders {
+    width: 86.875%; /* 1390px */
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-block-1 .effect-block .sliders .slider-item {
+    display: inline-block;
+    position: relative;
+    margin: 0 0.75% auto;
+    float: left;
+    width: 27.482014%;
+    height: 100%;
+    background: white;
+    color: black;
+}
+
+.slider-block-1 .effect-block .sliders .slider-item .image {
+    display: block;
+    position: relative;
+    height: 43.776824%;
+    width: 100%;
+    z-index: 999;
+    overflow: visible;
+}
+
+.slider-block-1 .effect-block .sliders .slider-item .image::before {
+    display: block;
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../Static/pic/Cutout.png") no-repeat -5% 106.5%;
+    background-size: 10%;
+}
+
+.slider-block-1 .effect-block .sliders .slider-item:first-child .image {
+    background: url("../Static/pic/Layer-25.png") no-repeat 75%;
+    background-size: 150%;
+}
+
+.slider-block-1 .effect-block .sliders .slider-item:nth-child(2) .image {
+    background: url("../Static/pic/Layer-25.png") no-repeat;
+    background-size: 250%;
+}
+
+
+
+
 
 @media screen and (max-width: 1200px) {
     #page {
