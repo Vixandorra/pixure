@@ -32,7 +32,7 @@ li {
     width: 100%;
     height: 100%;
     background: url("../Static/pic/background_01.png") no-repeat;
-    background-size: cover ;
+    background-size: cover;
 }
 
 #page .logo-block-1 .logo-block,
@@ -43,20 +43,20 @@ li {
 }
 
 #page .logo-block-1 {
-    height: 15.5%;
+    height: 916px;
 }
 
 #page .logo-block-2 {
-    height: 13.5%;
+    height: 884px;
 }
 
 
 #page .footer {
-    height: 13.5%;
+    height: 496px;
 }
 
 #page .logo-block-2 .logo-block {
-    height: 25.938967%;
+    height: 200px;
 }
 
 .slide-arrow, .logo-1 {
@@ -67,12 +67,12 @@ li {
 
 .slide-arrow {
     width: 5%;
-    height: auto;
+    height: 100%;
 }
 
 .slide-arrow .menu {
     display: block;
-    height: 2.15%;
+
 }
 
 .slide-arrow .menu li .menu-item {
@@ -81,6 +81,7 @@ li {
 
 .slide-arrow .menu li:hover .menu-item {
     display: block;
+    position: relative;
     background: url("../Static/pic/background_01.png") no-repeat;
     width: 120%;
     padding: 100%;
@@ -167,9 +168,9 @@ li {
 .content .logo-2 {
     position: relative;
     display: block;
-    margin: 15rem auto; /* 496px / 1520 b 358 / 918 */
+    margin: 370px 35.131579% 210px 30.263158%; /* 496px / 1520 b 358 / 918 */
     width: 34.736842%; /* 528 / 1520 */
-    height: 15.929825%;
+    height: 200px;
     background: url("../Static/pic/simbols_11.png") no-repeat, transparent;
     background-size: contain;
     vertical-align: middle;
@@ -179,16 +180,17 @@ li {
 .text {
     display: block;
     float: left;
-    width: 40%;
-    height: 12.447368%;
+    width: 34.210526%;
+    height: 78px;
     text-align: left;
-    margin: 0 5%;
+    margin: 0 auto;
     letter-spacing: 1px;
 }
 
 .text h1 {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    line-height: 1.7em;
 }
 
 .text h1::after {
@@ -199,11 +201,12 @@ li {
 }
 
 .text h2 {
-    font-size: 1em;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
 .text h3 {
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 .right-block {
@@ -270,7 +273,7 @@ li {
     display: block;
     position: relative;
     width: 100%;
-    height: 12.583333%;  /* 604px */
+    height: 604px;  /* 604px */
     margin: 0 auto;
 }
 
@@ -345,40 +348,17 @@ li {
 }
 
 
+@media screen and (max-width: 750px) {
+    #page {
+        width: 50%;
+    }
+}
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
     #page {
         width: 100%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1250px) {
-    #page {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    #page {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    #page {
-        width: 70%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    #page {
-        width: 60%;
         margin: 0 auto;
     }
 }
