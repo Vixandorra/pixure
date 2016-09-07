@@ -2,7 +2,7 @@ html, body {
     font: normal 100% Calibri, Candara, "Gill Sans", "Gill Sans MT", sans-serif;
     width: 100%;
     height: 100%;
-    height: 4800px;
+    height: 4099px;
     text-align: center;
 }
 
@@ -43,16 +43,16 @@ li {
 }
 
 #page .logo-block-1 {
-    height: 916px;
+    height: 782px;
 }
 
 #page .logo-block-2 {
-    height: 884px;
+    height: 758px;
 }
 
 
 #page .footer {
-    height: 496px;
+    height: 450px;
 }
 
 #page .logo-block-2 .logo-block {
@@ -66,13 +66,27 @@ li {
 }
 
 .slide-arrow {
-    width: 5%;
+    width: 4.831625%;
     height: 100%;
 }
 
 .slide-arrow .menu {
     display: block;
+}
 
+.slide-arrow li {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.slide-arrow .menu .trigram {
+    position: relative;
+    display: block;
+    height: 24px;
+    width: 100%;
+    background: url("../Static/pic/simbols_04.png") no-repeat 50%;
+    margin: 0 auto;
 }
 
 .slide-arrow .menu li .menu-item {
@@ -112,10 +126,10 @@ li {
 
 .pic-right, .menu {
     text-align: center;
-    height: auto;
+    height: 60px;
     color: white;
     float: right;
-    padding: 20px 1.6%;
+    margin: 33px auto;
 }
 
 .menu {
@@ -126,12 +140,22 @@ li {
 .pic-right {
     float: right;
     width: 5%;
+    margin-right: 5px;
+}
+
+.pic-right .contact {
+    position: relative;
+    display: block;
+    height: 24px;
+    width: 100%;
+    background: url("../Static/pic/simbols_06.png") no-repeat 50%;
+    float: left;
 }
 
 .logo-1 {
     position: relative;
     display: inline-block;
-    width: 95%;
+    width: 95.168375%;
     height: 100%;
     float: right;
     z-index: 999;
@@ -168,9 +192,9 @@ li {
 .content .logo-2 {
     position: relative;
     display: block;
-    margin: 370px 35.131579% 210px 30.263158%; /* 496px / 1520 b 358 / 918 */
-    width: 34.736842%; /* 528 / 1520 */
-    height: 200px;
+    margin: 287px 35% 147px 30.5005%; /* 389px / 1300 b 455 / 1300 */
+    width: 35.076923%; /* 456 / 1520 */
+    height: 178px;
     background: url("../Static/pic/simbols_11.png") no-repeat, transparent;
     background-size: contain;
     vertical-align: middle;
@@ -186,7 +210,6 @@ li {
     height: 78px;
     text-align: left;
     margin-left: 8.552632%;
-    letter-spacing: 1px;
 }
 
 .text .grid {
@@ -215,7 +238,7 @@ li {
 }
 
 .text h3 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .right-block {
@@ -282,7 +305,7 @@ li {
     display: block;
     position: relative;
     width: 100%;
-    height: 604px;  /* 604px */
+    height: 516px;  /* 604px */
     margin: 0 auto;
 }
 
@@ -315,6 +338,7 @@ li {
 .slider-block-1 .effect-block {
     display: block;
     position: relative;
+    float: left;
     width: 100%;
     height: 77.152318%; /*466px*/
 }
