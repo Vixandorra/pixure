@@ -192,7 +192,7 @@ li {
 .content .logo-2 {
     position: relative;
     display: block;
-    margin: 287px 35% 147px 30.5005%; /* 389px / 1300 b 455 / 1300 */
+    margin: 287px 35% 165px 30.5005%; /* 389px / 1300 b 455 / 1300 */
     width: 35.076923%; /* 456 / 1520 */
     height: 178px;
     background: url("../Static/pic/simbols_11.png") no-repeat, transparent;
@@ -209,7 +209,8 @@ li {
     width: 77.631579%;
     height: 78px;
     text-align: left;
-    margin-left: 8.552632%;
+    margin-left: 8.8072632%;
+    letter-spacing: 0.5px;
 }
 
 .text .grid {
@@ -220,26 +221,20 @@ li {
 }
 
 .text h1 {
-    font-weight: bold;
-    font-size: 1.6em;
-    line-height: 1.7em;
-}
-
-.text h1::after {
-    height: 5%;
-    content: url("../Static/pic/Shape-91.png");
-    float: right;
-    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    letter-spacing: 0.6px;
+    background: url("../Static/pic/Shape-91.png") no-repeat 100% 55%;
+    background-size: 3.5%;
 }
 
 .text h2 {
-    font-size: 1.2em;
-    line-height: 1.2em;
+    width: 93%;
+    font-size: 0.8em;
+    line-height: 1.8em;
 }
 
-.text h3 {
-    font-size: 1em;
-}
 
 .right-block {
     display: inline-block;
@@ -346,7 +341,8 @@ li {
 .slider-block-1 .effect-block .sliders {
     position: relative;
     display: inline-block;
-    width: 86.875%; /* 1390px */
+    float: left;
+    width: 86.822840%; /* 1162px */
     height: 100%;
     overflow: hidden;
 }
@@ -356,7 +352,7 @@ li {
     position: relative;
     margin: 0 0.75% auto;
     float: left;
-    width: 26.482014%;
+    width: 26.682014%;
     height: 100%;
     background: white;
     color: black;
