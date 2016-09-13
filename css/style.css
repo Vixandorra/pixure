@@ -196,7 +196,7 @@ li {
 .content .logo-2 {
     position: relative;
     display: block;
-    margin: 284px 35% 165px 30.2505%; /* 389px / 1300 b 455 / 1300 */
+    margin: 283px 35% 168px 30.18505%; /* 389px / 1300 b 455 / 1300 */
     width: 35.076923%; /* 456 / 1520 */
     height: 172px;
     background: url("../Static/pic/simbols_11.png") no-repeat, transparent;
@@ -213,22 +213,22 @@ li {
     width: 77.631579%;
     height: 78px;
     text-align: left;
-    margin-left: 8.8072632%;
-    letter-spacing: 0.5px;
+    margin-left: 8.70672632%;
+    letter-spacing: 0.44px;
 }
 
 .text .grid {
     display: block;
     float: left;
     height: 100%;
-    width: 44.067797%;
+    width: 43.67797%;
 }
 
 .text h1 {
     font-weight: bolder;
     font-size: 1.5em;
     line-height: 1.8em;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     background: url("../Static/pic/Shape-91.png") no-repeat 100% 55%;
     background-size: 3.5%;
 }
@@ -236,7 +236,7 @@ li {
 .text h2 {
     width: 93%;
     font-size: 0.8em;
-    line-height: 1.8em;
+    line-height: 1.7em;
 }
 
 
@@ -247,7 +247,7 @@ li {
     height: 50px;
     line-height: 1.2em;
     text-align: right;
-    margin: 20px 38px 0 0;
+    margin: 20px 56px 0 0;
     font-size: 0.9em;
 }
 
@@ -255,7 +255,7 @@ li {
     content: " ";
     display: block;
     height: 27px;
-    line-height: 1em;
+    line-height: 0.9em;
     width: 100%;
     float: right;
     text-align: right;
