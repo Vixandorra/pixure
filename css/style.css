@@ -43,7 +43,7 @@ li {
 }
 
 #page .logo-block-1 {
-    height: 782px;
+    height: 772px; /* 782px */
 }
 
 #page .logo-block-2 {
@@ -103,23 +103,27 @@ li {
 
 .slide-arrow .ticket {
     display: block;
+    position: relative;
+    float: left;
     width: 100%;
-    height: 93.6%;
+    height: 95.6%;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: left;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .slide-arrow .ticket .name {
     vertical-align: middle;
-    margin: 20px 7%;
+    margin: 70px 0;
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
 }
 
 .slide-arrow .ticket .arrow a {
     display: inline-block;
-    width: 20%;
-    margin: 1.6em 3%;
+    width: 10%;
+    margin: 0 5%;
     content: url("../Static/pic/simbols_40.png");
     transform: rotate(270deg);
 }
@@ -192,9 +196,9 @@ li {
 .content .logo-2 {
     position: relative;
     display: block;
-    margin: 287px 35% 165px 30.5005%; /* 389px / 1300 b 455 / 1300 */
+    margin: 284px 35% 165px 30.2505%; /* 389px / 1300 b 455 / 1300 */
     width: 35.076923%; /* 456 / 1520 */
-    height: 178px;
+    height: 172px;
     background: url("../Static/pic/simbols_11.png") no-repeat, transparent;
     background-size: contain;
     vertical-align: middle;
@@ -238,19 +242,20 @@ li {
 
 .right-block {
     display: inline-block;
-    float: left;
+    float: right;
     width: 6.447368%;
-    height: 12.447368%;
+    height: 50px;
+    line-height: 1.2em;
     text-align: right;
-    margin: 0   ;
+    margin: 20px 38px 0 0;
     font-size: 0.9em;
 }
 
 .right-block .arrow-right {
     content: " ";
     display: block;
-    height: 40px;
-    line-height: 1.8em;
+    height: 27px;
+    line-height: 1em;
     width: 100%;
     float: right;
     text-align: right;
@@ -258,8 +263,9 @@ li {
 
 .right-block .arrow-right a {
     display: block;
-    width: 100%;
-    height: 40%;
+    width: 90%;
+    height: 35%;
+    float: right;
     background: url("../Static/pic/simbols_40.png") no-repeat 100%;
     background-size: contain;
     z-index: 999;
@@ -267,11 +273,12 @@ li {
 
 .right-block .date {
     display: block;
-    height: 1.2em;
+    height: 40%;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.9em;
     text-align: right;
     float: right;
+    margin-left: 58px;
 }
 
 .logo-block-2 .background {
@@ -327,7 +334,8 @@ li {
     float: right;
     height: 100%;
     width: 9.210526%;
-    background: url("../Static/pic/simbols_40.png") no-repeat 50%;
+    background: url("../Static/pic/simbols_40.png") no-repeat 50% 40%;
+    background-size: 15%
 }
 
 .slider-block-1 .effect-block {
@@ -335,14 +343,14 @@ li {
     position: relative;
     float: left;
     width: 100%;
-    height: 77.152318%; /*466px*/
+    height: 77.052318%; /*466px*/
 }
 
 .slider-block-1 .effect-block .sliders {
     position: relative;
     display: inline-block;
     float: left;
-    width: 86.822840%; /* 1162px */
+    width: 89.822840%; /* 1162px */
     height: 100%;
     overflow: hidden;
 }
@@ -368,17 +376,19 @@ li {
 
 
 .slider-block-1 .effect-block .sliders .slider-item .descripte h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    letter-spacing: 0.6px;
     text-align: left;
     margin: 30px 0 auto;
+    line-height: 40px;
 }
 
 .slider-block-1 .effect-block .sliders .slider-item .descripte .text-slide {
     position: relative;
     float: left;
     text-align: left;
-    font-size: 1.1em;
-    line-height: 30px;
+    font-size: 0.8em;
+    line-height: 20px;
 }
 
 .slider-block-1 .effect-block .sliders .slider-item .image {
@@ -403,7 +413,7 @@ li {
 .slider-block-1 .effect-block .sliders .slider-item:first-child {
     position: relative;
     display: inline-block;
-    margin-left: -150px;
+    margin-left: -160px;
 }
 
 .slider-block-1 .effect-block .sliders .slider-item:first-child .image {
