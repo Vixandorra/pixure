@@ -308,7 +308,7 @@ li {
     float: left;
 }
 
-.slider-block-1 {
+.slider-block-1, .slider-block-2 {
     display: block;
     position: relative;
     width: 100%;
@@ -316,14 +316,16 @@ li {
     margin: 0 auto;
 }
 
-.slider-block-1 .header {
+.slider-block-1 .header,
+.slider-block-2 .header{
     display: block;
     position: relative;
     height: 57px;
     margin: 0 auto;
 }
 
-.slider-block-1 .header h1 {
+.slider-block-1 .header h1,
+.slider-block-2 .header h1 {
     display: block;
     position: relative;
     width: 73.75%; /* 1180px */
@@ -335,7 +337,7 @@ li {
     margin: 2.1em auto;
 }
 
-.slider-block-1 .effect-block .button {
+.effect-block .button {
     position: relative;
     display: inline-block;
     float: right;
@@ -345,7 +347,7 @@ li {
     background-size: 15%
 }
 
-.slider-block-1 .effect-block {
+.effect-block {
     display: block;
     position: relative;
     float: left;
@@ -353,7 +355,7 @@ li {
     height: 394px; /*466px*/
 }
 
-.slider-block-1 .effect-block .sliders {
+.effect-block .sliders {
     position: relative;
     display: inline-block;
     float: left;
@@ -362,20 +364,27 @@ li {
     overflow: hidden;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item {
+.effect-block .sliders .slider-item {
     display: inline-block;
     position: relative;
     margin: 0 0.75% auto;
     float: left;
     width: 26.742014%;
     height: 100%;
-    background: white;
-    background-size: 16%;
     z-index: 999;
     color: black;
+    background: linear-gradient(black 43.7%, white 43%);
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .descripte {
+.effect-block .sliders .slider-item .text-block {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+.effect-block .sliders .slider-item .text-block .descripte {
     display: block;
     position: relative;
     width: 80%;
@@ -384,7 +393,7 @@ li {
 }
 
 
-.slider-block-1 .effect-block .sliders .slider-item .descripte h1 {
+.effect-block .sliders .slider-item .descripte h1 {
     font-size: 1.6em;
     line-height: 1.6em;
     text-align: left;
@@ -392,15 +401,15 @@ li {
     line-height: 40px;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item:nth-child(odd) .descripte h1 {
+.effect-block .sliders .slider-item:nth-child(odd) .descripte h1 {
     letter-spacing: 0.63px;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item:nth-child(even) .descripte h1 {
+.effect-block .sliders .slider-item:nth-child(even) .descripte h1 {
     letter-spacing: 1.3px;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .descripte .text-slide {
+.effect-block .sliders .slider-item .descripte .text-slide {
     position: relative;
     float: left;
     text-align: left;
@@ -408,78 +417,121 @@ li {
     line-height: 1.6em;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .image {
+.effect-block .sliders .slider-item .image {
     display: block;
     position: relative;
     height: 43.776824%;
     width: 100%;
-    overflow: visible;
     z-index: 5;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .image .like {
-    display: inline-block;
+.effect-block .sliders .slider-item .image .background {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.effect-block .sliders .slider-item .image .like-block {
+    display: block;
     position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 10.4%;
-    height: 18px;
-    background: url("../Static/pic/Shape-8.png") no-repeat;
-    filter: invert(0);
+    bottom: 13px;
+    right: 12px;
+    width: 10.9%;
+    height: 0.8em;
+}
+
+.effect-block .sliders .slider-item .image .like-block .heart {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: url("../Static/pic/heart.png") no-repeat 0% 50%;
+    background-size: 90%;
+    margin: 0 auto;
 }
 
 
-.slider-block-1 .effect-block .sliders .slider-item .image .like .like-count {
+
+.effect-block .sliders .slider-item .image .like-block .like-count {
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: right;
     font-size: 0.7em;
+    margin: 0;
 }
 
 
 
-.slider-block-1 .effect-block .sliders .slider-item:before {
+.effect-block .sliders .slider-item:before {
     display: inline-block;
     position: absolute;
     left: 0;
     content: "";
     width: 100%;
     height: 100%;
-    background: url("../Static/pic/Cutout.png") no-repeat -9.2% 42.6%,  transparent;
+    background: url("../Static/pic/Cutout.png") no-repeat -9.2% 42.6%;
     background-size: 14%;
     z-index: 999;
-    overflow: visible;
 } 
 
-.slider-block-1 .effect-block .sliders .slider-item:first-child {
+.effect-block .sliders .slider-item:first-child {
     position: relative;
     display: inline-block;
     margin-left: -158px;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item:first-child .image {
-    background: url("../Static/pic/Layer-25.png") no-repeat 75%;
-    background-size: 150%;
+.slider-block-1 .effect-block .sliders .slider-item:first-child .image .background,
+.slider-block-2 .effect-block .sliders .slider-item:first-child .image .background {
+    background: url("../Static/pic/Layer-25.png") no-repeat 5% 75%;
+    background-size: 240%;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item:nth-child(2) .image {
-    background: url("../Static/pic/Layer-25.png") no-repeat;
-    background-size: 250%;
+.slider-block-1 .effect-block .sliders .slider-item:nth-child(2) .image .background {
+    position: relative;
+    background: url("../Static/pic/Layer-25.png") no-repeat 74% 32%;
+    background-size: 240%;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item:nth-child(3) .image {
-    background: url("../Static/pic/Layer-25.png") no-repeat;
-    background-size: 150%;
+.slider-block-1 .effect-block .sliders .slider-item:nth-child(3) .image .background {
+    background: url("../Static/pic/Layer-25.png") no-repeat 50% 50%;
+    background-size: 140%;
 }
 
 
-.slider-block-1 .effect-block .sliders .slider-item:nth-child(4) .image {
-    background: url("../Static/pic/Layer-25.png") no-repeat;
-    background-size: 350%;
+.slider-block-1 .effect-block .sliders .slider-item:nth-child(4) .image .background {
+    background: url("../Static/pic/Layer-25.png") no-repeat 75% 75%;
+    background-size: 380%;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item:nth-child(4) {
+
+.slider-block-2 .effect-block .sliders .slider-item:nth-child(2) .image .background {
+    position: relative;
+    background: url("../Static/pic/Layer-25.png") no-repeat 74% 32%;
+    background-size: 240%;
+}
+
+.slider-block-2 .effect-block .sliders .slider-item:nth-child(3) .image .background {
+    background: url("../Static/pic/Layer-25.png") no-repeat 50% 50%;
+    background-size: 140%;
+}
+
+
+.slider-block-2 .effect-block .sliders .slider-item:nth-child(4) .image .background {
+    background: url("../Static/pic/Layer-25.png") no-repeat 75% 75%;
+    background-size: 380%;
+}
+
+.effect-block .sliders .slider-item:nth-child(4) {
     margin-right: 0;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .social {
+.effect-block .sliders .slider-item .social {
     display: block;
     position: relative;
     width: 100%;
@@ -489,7 +541,7 @@ li {
     margin: 0 auto;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .social .comment {
+.effect-block .sliders .slider-item .social .comment {
     display: inline-block;
     position: relative;
     float: left;
@@ -499,7 +551,7 @@ li {
 
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .social .comment .buttom-comment {
+.effect-block .sliders .slider-item .social .comment .buttom-comment {
      position: relative;
      display: inline-block;
      width: 68%;
@@ -509,7 +561,7 @@ li {
      margin: 0 auto;
  }
 
-.slider-block-1 .effect-block .sliders .slider-item .social .comment .buttom-comment .count-comment {
+.effect-block .sliders .slider-item .social .comment .buttom-comment .count-comment {
     position: relative;
     display: block;
     font-size: 0.8em;
@@ -524,7 +576,7 @@ li {
 
 
 
-.slider-block-1 .effect-block .sliders .slider-item .social .menu {
+.effect-block .sliders .slider-item .social .menu {
     display: inline-block;
     position: relative;
     float: right;
@@ -533,7 +585,7 @@ li {
     margin: 0 auto;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .social .menu .buttom {
+.effect-block .sliders .slider-item .social .menu .buttom {
     display: block;
     position: relative;
     float: right;
