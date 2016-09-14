@@ -370,6 +370,8 @@ li {
     width: 26.742014%;
     height: 100%;
     background: white;
+    background-size: 16%;
+    z-index: 999;
     color: black;
 }
 
@@ -411,19 +413,40 @@ li {
     position: relative;
     height: 43.776824%;
     width: 100%;
-    z-index: 999;
     overflow: visible;
+    z-index: 5;
 }
 
-.slider-block-1 .effect-block .sliders .slider-item .image::before {
-    display: block;
-    position: relative;
+.slider-block-1 .effect-block .sliders .slider-item .image .like {
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 10.4%;
+    height: 18px;
+    background: url("../Static/pic/Shape-8.png") no-repeat;
+    filter: invert(0);
+}
+
+
+.slider-block-1 .effect-block .sliders .slider-item .image .like .like-count {
+    font-size: 0.7em;
+}
+
+
+
+.slider-block-1 .effect-block .sliders .slider-item:before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
     content: "";
     width: 100%;
     height: 100%;
-    background: url("../Static/pic/Cutout.png") no-repeat -5% 109.5%;
-    background-size: 10%;
-}
+    background: url("../Static/pic/Cutout.png") no-repeat -9.2% 42.6%,  transparent;
+    background-size: 14%;
+    z-index: 999;
+    overflow: visible;
+} 
 
 .slider-block-1 .effect-block .sliders .slider-item:first-child {
     position: relative;
@@ -473,14 +496,41 @@ li {
     width: 45.141066%;
     height: 100%;
     border-right: 0.5px solid #ebebeb;
+
 }
+
+.slider-block-1 .effect-block .sliders .slider-item .social .comment .buttom-comment {
+     position: relative;
+     display: inline-block;
+     width: 68%;
+     height: 100%;
+     background: url("../Static/pic/index_91.png") no-repeat 0% 50%;
+     background-size: 20%;
+     margin: 0 auto;
+ }
+
+.slider-block-1 .effect-block .sliders .slider-item .social .comment .buttom-comment .count-comment {
+    position: relative;
+    display: block;
+    font-size: 0.8em;
+    float: right;
+    width: 80%;
+    text-align: right;
+    font-weight: bolder;
+    color: black;
+    margin: 1.3em -5px;
+}
+
+
+
 
 .slider-block-1 .effect-block .sliders .slider-item .social .menu {
     display: inline-block;
     position: relative;
     float: right;
-    width: 54.858934%;
-    height: 100%;
+    width: 54.058934%;
+    height: 52px;
+    margin: 0 auto;
 }
 
 .slider-block-1 .effect-block .sliders .slider-item .social .menu .buttom {
@@ -488,10 +538,12 @@ li {
     position: relative;
     float: right;
     height: 100%;
-    width: 30.857143%;
-    background-color: gray;
-    background-image: url() no-repeat;
+    width: 32.857143%;
+    background: url("../Static/pic/Shape-7.png") no-repeat 50% 55%, #e9e9e9;
+    margin: 0 auto;
 }
+
+
 
 
 
