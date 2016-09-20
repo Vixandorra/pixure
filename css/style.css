@@ -1,5 +1,5 @@
 html, body {
-    font: normal 100% Calibri, Candara, "Gill Sans", "Gill Sans MT", sans-serif;
+    font: normal 100% Montserrat-Regular, Calibri, Candara, "Gill Sans", "Gill Sans MT", sans-serif;
     width: 100%;
     height: auto;
     text-align: center;
@@ -15,6 +15,18 @@ body {
     src: url(../Static/font/Montserrat-Bold.ttf);
 }
 
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../Static/font/Montserrat-Regular.ttf);
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 0.8em;
+
+    }
+}
+
 @media screen and (max-width: 1200px) {
     body {
         font-size: 0.9em;
@@ -23,7 +35,7 @@ body {
 
 @media screen and (max-width: 750px) {
     body {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
@@ -242,7 +254,7 @@ li {
 .content .logo-2 {
     position: relative;
     display: block;
-    margin: 283px 35% 168px 30.18505%; /* 389px / 1300 b 455 / 1300 */
+    margin: 283px 35% 169px 30.18505%; /* 389px / 1300 b 455 / 1300 */
     width: 35.076923%; /* 456 / 1520 */
     height: 172px;
     background: url("../Static/pic/simbols_11.png") no-repeat, transparent;
@@ -269,7 +281,7 @@ li {
     height: 78px;
     text-align: left;
     margin-left: 8.70672632%;
-    letter-spacing: 0.41px;
+    letter-spacing: 0.42px;
 }
 
 .text .grid {
@@ -290,18 +302,45 @@ li {
 }
 
 .text h1 {
+    display: inline-block;
+    width: 80%;
+    float: left;
     font-weight: bolder;
     font-size: 1.5em;
-    line-height: 1.8em;
+    line-height: 2.3em;
     letter-spacing: 0.5px;
-    background: url("../Static/pic/Shape-91.png") no-repeat 100% 55%;
-    background-size: 3.5%;
+}
+
+.text .trigram-head {
+    position: relative;
+    float: right;
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    background: url("../Static/pic/Shape-91.png") no-repeat 100% 30%;
+    background-size: 20%;
+}
+
+@media screen and (max-width: 750px) {
+    .text h1 {
+        width: 100%;
+    }
+
+    .text .trigram-head {
+        position: absolute;
+        display: block;
+        bottom: 100px;
+        right: 50px;
+        background: url("../Static/pic/Shape-750.png") no-repeat 100% 100%;
+        background-size: 25%;
+    }
 }
 
 .text h2 {
     width: 93%;
     font-size: 0.8em;
-    line-height: 1.7em;
+    line-height: 20px;
+
 }
 
 
@@ -322,7 +361,7 @@ li {
     }
 }
 
-    .right-block .arrow-right {
+.right-block .arrow-right {
     content: " ";
     display: block;
     height: 27px;
@@ -381,7 +420,7 @@ li {
     display: block;
     position: relative;
     width: 100%;
-    height: 468px;  /* 604px */
+    height: 465px;  /* 604px */
     margin: 0 auto;
 }
 
@@ -396,7 +435,7 @@ li {
 .slider-block-2 .header{
     display: block;
     position: relative;
-    height: 57px;
+    height: 53px;
     margin: 0 auto;
 }
 
@@ -407,10 +446,10 @@ li {
     width: 73.75%; /* 1180px */
     height: 100%;
     text-align: left;
-    font-size: 1.18em;
-    letter-spacing: 0.4px;
+    font-size: 1.2em;
+    letter-spacing: 0px;
     vertical-align: middle;
-    margin: 2.1em auto;
+    margin: 2.8em auto;
 }
 
 .effect-block .button {
@@ -483,26 +522,19 @@ li {
 
 .effect-block .sliders .slider-item .descripte h1 {
     font-size: 1.6em;
-    line-height: 1.6em;
     text-align: left;
     margin: 25px 0 auto;
-    line-height: 40px;
+    line-height: 2.05em;
+    letter-spacing: 0.5px;
 }
 
-.effect-block .sliders .slider-item:nth-child(odd) .descripte h1 {
-    letter-spacing: 0.63px;
-}
-
-.effect-block .sliders .slider-item:nth-child(even) .descripte h1 {
-    letter-spacing: 1.3px;
-}
 
 .effect-block .sliders .slider-item .descripte .text-slide {
     position: relative;
     float: left;
     text-align: left;
     font-size: 0.85em;
-    line-height: 1.6em;
+    line-height: 2.05em;
 }
 
 .effect-block .sliders .slider-item .image {
@@ -525,9 +557,9 @@ li {
 .effect-block .sliders .slider-item .image .like-block {
     display: block;
     position: absolute;
-    bottom: 13px;
-    right: 12px;
-    width: 10.9%;
+    bottom: 14px;
+    right: 13px;
+    width: 10.7%;
     height: 0.8em;
 }
 
@@ -628,11 +660,12 @@ li {
 .text-info-block .text .text-block {
     display: inline-block;
     position: relative;
-    margin: 0 1.8% 1.7em 0;
+    margin: 0 1.8% 2.1em 0;
     float: left;
     width: 47%;
     font-size: 0.8em;
-    line-height: 1.7em;
+    line-height: 2.1em;
+    letter-spacing: 0;
 }
 
 
@@ -704,7 +737,8 @@ li {
     text-align: right;
     font-weight: bolder;
     color: black;
-    margin: 1.3em -5px;
+    margin: 1.9em -5px;
+    letter-spacing: 0;
 }
 
 
@@ -736,7 +770,7 @@ li {
     display: block;
     position: relative;
     width: 100%;
-    height: 288px;
+    height: 286px;
     margin: 0 auto;
 }
 
@@ -764,7 +798,7 @@ li {
     display: inline-block;
     width: 73.75%;
     float: left;
-    margin: 3.25em 8.4%;
+    margin: 4.3em 8.4%;
 }
 
 
@@ -782,13 +816,14 @@ li {
 
 .text-info-block4 .grid-text .grid-text-item h1 {
     font-size: 1.6em;
-    line-height: 2.4em;
+    line-height: 2.8em;
+    letter-spacing: 0;
 }
 
 .text-info-block4 .grid-text .grid-text-item span {
-    font-size: 0.8em;
-    letter-spacing: 0.4px;
-    line-height: 1.6em;
+    font-size: 0.85em;
+    letter-spacing: 0px;
+    line-height: 2em;
 }
 
 .image-credit-block {
@@ -806,19 +841,21 @@ li {
     position: relative;
     display: block;
     float: right;
-    width: 23.424759%;
+    width: 23.924759%;
     text-align: left;
-    margin: 12em 18.3% 0 0;
+    margin: 15em 18% 0 0;
 
 }
 
 .image-credit-block .image-credit-text h2 {
     font-size: 1em;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.1px;
+    line-height: 1.5em;
 }
 
 .image-credit-block .image-credit-text h1 {
     font-size: 2.5em;
+    line-height: 1.6em;
     letter-spacing: 1px;
 }
 
@@ -826,10 +863,11 @@ li {
     display: block;
     position: relative;
     padding-right: 10px;
+    width: 95%;
     font-size: 0.8em;
-    line-height: 1.8em;
+    line-height: 2em;
     letter-spacing: 0.3px;
-    margin-top: 0.8em;
+    margin-top: 1.3em;
 }
 
 
@@ -855,32 +893,32 @@ li {
     position: relative;
     float: left;
     font-size: 0.75em;
-    margin: 55px auto;
+    margin: 57px 0 auto;
     line-height: 1em;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
 }
 
 .footer .footer-blocks .footer-blocks-item:first-child {
     width: 23.096319%; /* 229px */
-    line-height: 1.7em;
+    line-height: 2.2em;
 
 }
 
 .footer .footer-blocks .footer-blocks-item:nth-child(2) {
     width: 12.702874%; /* 120px */
-    line-height: 2.2em;
+    line-height: 2.81em;
 }
 
 .footer .footer-blocks .footer-blocks-item:last-child {
     width: 23.918306%; /* 120px */
-    line-height: 2.15em;
+    line-height: 2.75em;
 }
 
 
 .footer .footer-blocks .footer-blocks-item h1 {
     color: #0d3354;
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.8em;
     margin-bottom: 0.8em;
 }
 
