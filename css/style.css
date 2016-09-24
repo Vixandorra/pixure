@@ -1427,7 +1427,16 @@ li {
 
 @media screen and (max-width: 750px) {
     .footer .footer-address {
-        
+        font-size: 0.65em;
+        line-height: 2em;
+        letter-spacing: 0;
+
+    }
+
+    .footer .footer-address address {
+        width: 100%;
+        margin: 42px auto;
+        margin-left: 2px;
     }
 }
 
